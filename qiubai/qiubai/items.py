@@ -10,5 +10,13 @@ import scrapy
 
 class QiubaiItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    avatar = scrapy.Field()
+    gender = scrapy.Field()
+    age = scrapy.Field()
+    profile_link = scrapy.Field()
+    content = scrapy.Field()
+    up = scrapy.Field()
+    comment_num = scrapy.Field()
+    
+

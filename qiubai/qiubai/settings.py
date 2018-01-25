@@ -39,10 +39,31 @@ ROBOTSTXT_OBEY = True
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-#DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-#}
+DEFAULT_REQUEST_HEADERS = {
+
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+
+    'Accept-Encoding': 'gzip, deflate, sdch',
+
+    'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4',
+
+    'Connection': 'keep-alive',
+
+    'Cookie': '_qqq_uuid_="2|1:0|10:1495281326|10:_qqq_uuid_|56:YjBmNGFjNWQ2MGJiMTI2YTVmNGZjNjc3MDZhM2ExYjhjNzIwYTIwYg==|fff0b81eb8c19de153569044eee931cf0978fe83664358f2913c8df7d7fe2370"; _xsrf=2|f8ab8296|78b6283fde07cc3afe02a455287c6730|1495282613; __cur_art_index=800',
+
+    'Cache-Control': 'max-age=0',
+
+    'DNT': '1',
+
+    'Host': 'www.qiushibaike.com',
+
+    'Referer': 'http://www.qiushibaike.com/8hr/page/2/?s=4984283',
+
+    'Upgrade-Insecure-Requests': '1',
+
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+
+}
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
@@ -64,9 +85,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'qiubai.pipelines.QiubaiPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'qiubai.pipelines.QiubaiPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
